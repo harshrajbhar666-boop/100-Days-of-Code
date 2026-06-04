@@ -1,0 +1,5 @@
+Line 1: 10:00 AM - System started successfully.
+Line 2: 10:05 AM - User atulkumar logged in.
+Line 3: 10:15 AM - Error: Could not connect to internet.
+Line 4: 10:30 AM - Running a python script to check databases.
+Line 5: 10:45 AM - Process finished with exit code 0.
