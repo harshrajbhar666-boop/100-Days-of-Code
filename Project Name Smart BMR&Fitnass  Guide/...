@@ -1,0 +1,72 @@
+print("======= MENU =======")
+
+# --- STEP 1: INPUTS ---
+Weight = float(input("Enter your Weight (in kg): "))
+Height = float(input("Enter your Height (in cm): "))
+Age = int(input("Enter your Age: "))
+
+Gender = input("Enter your Gender (M/F): ")
+Goal = input("Enter your Goal (Lose/Gain/Maintain): ")
+
+Activity = int(input("Enter Activity Level (1=Low, 2=Medium, 3=High): "))
+
+print("====================")
+
+
+# --- STEP 2: BMR CALCULATION ---
+if Gender == "M" or Gender == "m":
+    BMR = (10 * Weight) + (6.25 * Height) - (5 * Age) + 5
+
+elif Gender == "F" or Gender == "f":
+    BMR = (10 * Weight) + (6.25 * Height) - (5 * Age) - 161
+
+else:
+    print("Invalid Gender entered!")
+    BMR = 0 
+
+
+# --- STEP 3: TOTAL CALORIES (MAINTENANCE) ---
+
+if Activity == 1:
+    TotalCalories = BMR * 1.2
+
+elif Activity == 2:
+    TotalCalories = BMR * 1.55
+
+elif Activity == 3:
+    TotalCalories = BMR * 1.9
+
+else:
+    print("Invalid Activity choice! Using default low activity.")
+    TotalCalories = BMR * 1.2
+
+
+# --- STEP 4: FINAL TARGET CALORIES ---
+if Goal == "Lose" or Goal == "lose":
+    FinalTarget = TotalCalories - 500
+
+elif Goal == "Gain" or Goal == "gain":
+    FinalTarget = TotalCalories + 500
+
+elif Goal == "Maintain" or Goal == "maintain":
+    FinalTarget = TotalCalories
+
+else:
+    print("Invalid Goal! Showing Maintenance Calories.")
+    FinalTarget = TotalCalories
+
+
+# --- STEP 5: FINAL OUTPUT REPORT ---
+print("\n--- YOUR FITNESS REPORT ---")
+print(f"Base BMR: {BMR:.2f} calories")
+print(f"Maintenance Calories: {TotalCalories:.2f} calories")
+print(f"To {Goal}, your daily target is: {FinalTarget:.2f} calories")
+
+
+
+
+
+
+
+
+
