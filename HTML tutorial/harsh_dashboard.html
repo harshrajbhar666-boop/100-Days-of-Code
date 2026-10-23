@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh - Developer Portfolio</title>
+    <link rel="stylesheet" href="Harsh_style.css">
+</head>
+
+<body>
+
+    <header class="sticky-header">
+        <div class="brand">
+            <h1>🛡️ Team Devdoots</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#skills">Tech Stack</a></li>
+                <li><a href="#telemetry">Telemetry</a></li>
+            </ul>
+        </nav>
+        <div class="user-profile">
+            <!-- Avatar me emoji lagaya hai -->
+            <span class="avatar">👤</span>
+            <div class="user-info">
+                <span class="user-name">Harsh</span>
+                <span class="user-role">Lvl: 15 | AI Systems Architect</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECTION 1: TECH STACK -->
+        <section id="skills" class="matrix-section">
+            <h2 class="section-title">Tech Stack Matrix</h2>
+
+            <div class="grid-container">
+                <div class="card">
+                    <span class="domain-tag">Backend</span>
+                    <h3>Python & Logic Building</h3>
+                    <p class="proficiency">Proficiency: High</p>
+                    <div class="progress-bar">
+                        <div class="progress high"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="domain-tag">AI Integration</span>
+                    <h3>Prompt Architecture & APIs</h3>
+                    <p class="proficiency">Proficiency: Advanced</p>
+                    <div class="progress-bar">
+                        <div class="progress advanced"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="domain-tag">UI/UX</span>
+                    <h3>HTML & CSS Grid</h3>
+                    <p class="proficiency">Proficiency: Intermediate</p>
+                    <div class="progress-bar">
+                        <div class="progress intermediate"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="domain-tag">Tools</span>
+                    <h3>Git & GitHub</h3>
+                    <p class="proficiency">Proficiency: Intermediate</p>
+                    <div class="progress-bar">
+                        <div class="progress intermediate"></div>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- ✅ YAHAN FIX KIYA HAI: Pehla section yahan properly band kar diya -->
+
+        <!-- SECTION 2: TELEMETRY -->
+        <section id="telemetry" class="telemetry-section">
+            <h2 class="section-title">Swarm Robot Telemetry</h2>
+
+            <div class="table-container">
+
+                <table class="telemetry-table">
+                    <thead>
+                        <tr>
+                            <th>Node ID</th>
+                            <th>Operating Status</th>
+                            <th>Battery Level</th>
+                            <th>Signal Strength</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>Bot-Alpha</td>
+                            <td><span class="live-badge"></span> Active</td>
+                            <td>85%</td>
+                            <td>Excellent</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bot-Beta</td>
+                            <td><span class="offline-badge"></span> Offline</td>
+                            <td>10%</td>
+                            <td>Lost</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bot-Gamma</td>
+                            <td><span class="live-badge"></span> Active</td>
+                            <td>92%</td>
+                            <td>Good</td>
+                            <section id="command" class="command-section">
+                                <h2 class="section-title">System Command Override</h2>
+
+                                <div class="form-container">
+                                    <form action="#" method="POST" class="command-form">
+
+                                        <div class="form-group">
+                                            <label for="operator">Operator Credentials</label>
+                                            <input type="text" id="operator" placeholder="Enter Level 15 Access Code..."
+                                                required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="target-node">Target Simulation Node</label>
+                                            <select id="target-node" required>
+                                                <option value="" disabled selected>Select a Bot...</option>
+                                                <option value="bot-alpha">Bot-Alpha (Active)</option>
+                                                <option value="bot-beta">Bot-Beta (Offline)</option>
+                                                <option value="bot-gamma">Bot-Gamma (Active)</option>
+                                                <option value="all-swarm">Broadcast to Entire Swarm</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="command-input">Execution Command</label>
+                                            <textarea id="command-input" rows="4"
+                                                placeholder="Enter simulation override sequence here..."
+                                                required></textarea>
+                                        </div>
+
+                                        <button type="submit" class="submit-btn">Execute Command</button>
+                                    </form>
+                                </div>
+                            </section>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
